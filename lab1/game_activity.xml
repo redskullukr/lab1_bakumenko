@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ім'я гравця: "
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textViewGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Хід гравця: X"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayoutBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        android:rowOrderPreserved="false">
+
+        <!-- Рядок 1 -->
+        <Button
+            android:id="@+id/cell_00"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:id="@+id/cell_01"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:id="@+id/cell_02"
+            style="@android:style/Widget.Button" />
+
+        <!-- Рядок 2 -->
+        <Button
+            android:id="@+id/cell_10"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:id="@+id/cell_11"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:id="@+id/cell_12"
+            style="@android:style/Widget.Button" />
+
+        <!-- Рядок 3 -->
+        <Button
+            android:id="@+id/cell_20"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:id="@+id/cell_21"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:id="@+id/cell_22"
+            style="@android:style/Widget.Button" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Почати заново" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вийти" />
+    </LinearLayout>
+</LinearLayout>
